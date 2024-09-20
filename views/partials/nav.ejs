@@ -1,0 +1,13 @@
+<nav class="flex items-center gap-28 justify-between px-24 py-5"></nav>
+   <% if(user){%>
+    <div class="flex items-center gap-20">
+        <a class="text-blue-100 font-semibold" href="/">Home</a>
+        <a class="text-blue-100 font-semibold" href="/user/signout">Signout</a>
+    </div>
+   <%}else{%>
+    <div class="flex items-center gap-20">
+        <a class="text-blue-100 font-semibold" href="/">Home</a>
+        <a class="text-blue-100 font-semibold" href="/user/signup">SignUp</a>
+    </div>
+    <%}%>
+</nav>
